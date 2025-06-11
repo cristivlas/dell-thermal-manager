@@ -268,7 +268,7 @@ def main():
 
     while True:
         fan_power, max_cpu_temp, max_gpu_temp, max_pci_temp, max_drive_temp = get_fan_power(report=False)
-        log = f'Max temp CPU: {max_cpu_temp}°C, GPU: {max_gpu_temp}°C, PCI: {max_pci_temp}°C, DISK: {max_drive_temp}°C, fan: {current}%'
+        log = f'Max temp cpu: {max_cpu_temp}°C, gpu: {max_gpu_temp}°C, pci: {max_pci_temp}°C, disk: {max_drive_temp}°C, fan: {current}%'
         delay = 0.5
 
         if current != fan_power:
